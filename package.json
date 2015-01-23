@@ -23,6 +23,11 @@
     "type": "git",
     "url": "https://github.com/CyberAgent/adbkit.git"
   },
+  "scripts": {
+    "postpublish": "grunt clean",
+    "prepublish": "grunt test coffee",
+    "test": "grunt test"
+  },
   "dependencies": {
     "adbkit-logcat": "git+https://github.com/dweinstein/adbkit-logcat#no-coffee",
     "adbkit-monkey": "git+https://github.com/dweinstein/adbkit-monkey#no-coffee",
